@@ -9,8 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
-import { NavbarComponent } from './pages/navbar/navbar.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
+
 
 
 
@@ -20,7 +21,6 @@ import { HomeComponent } from './pages/home/home.component';
     LoginComponent,
     RegisterComponent,
     NavbarComponent,
-    HomeComponent
   ],
   imports: [
     BrowserModule,

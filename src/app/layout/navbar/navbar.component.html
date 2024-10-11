@@ -1,5 +1,6 @@
+<div class="h-full flex  gap-4 overflow-auto">
   <!-- Barra de navegación vertical en el lado izquierdo -->
-  <nav class="h-screen sticky top-0 z-20 w-[18rem] bg-white shadow-md flex flex-col justify-between">
+  <nav class="flex-none sticky top-0 z-20 w-[18rem] bg-white shadow-md flex flex-col justify-between">
     <div>
       <!-- Logo o nombre de la app -->
       <h1 class="text-3xl font-bold mb-5 font-serif p-4">Gestor de Fallas</h1>
@@ -59,7 +60,6 @@
         <span class="text-lg font-medium">Perfil</span>
       </a>
     </div>
-
     <div>
 
       <a (click)="logout()" class="flex items-center cursor-pointer text-gray-700 px-4 py-4 hover:bg-gray-700 hover:text-zinc-200 text-lg font-medium"  >
@@ -70,6 +70,10 @@
       </a>
     </div>
 
+
   </nav>
 
-
+  <div class="flex-auto">
+    <router-outlet></router-outlet>
+  </div>
+</div>

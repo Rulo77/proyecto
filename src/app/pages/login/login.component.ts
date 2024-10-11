@@ -24,7 +24,7 @@ export class LoginComponent {
       if (this.user.length > 0 && this.password === '123456') {
         const userString = JSON.stringify(this.user[0]);  // Convertir objeto a JSON
         localStorage.setItem('user', userString); // Guardar en localStorage
-        this.router.navigate(['/home']);
+        this.router.navigate(['']);
       } else {
         this.errorMessage = 'correo o contraseña equivocada';
       }
