@@ -11,6 +11,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
+import { ProveedoresComponent } from './pages/proveedores/proveedores.component';
+import { TrabajadoresComponent } from './pages/trabajadores/trabajadores.component';
 
 
 
@@ -21,6 +24,9 @@ import { HomeComponent } from './pages/home/home.component';
     LoginComponent,
     RegisterComponent,
     NavbarComponent,
+    PerfilComponent,
+    ProveedoresComponent,
+    TrabajadoresComponent,
   ],
   imports: [
     BrowserModule,
