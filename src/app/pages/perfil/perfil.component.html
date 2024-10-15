@@ -1,1 +1,60 @@
-<p>perfil works!</p>
+<div class="p-20">
+  <!-- Encabezado del Perfil -->
+  <div class="flex items-center space-x-6 mb-8 p-5">
+    <img class="w-24 h-24 rounded-full object-cover border border-gray-300" src="assets/company-logo.jpg"
+      alt="Logo de la Empresa" />
+    <div>
+      <h2 class="text-3xl font-semibold text-gray-800">{{ usuario.empresa }}</h2>
+      <h4 class="text-lg text-gray-600">{{ usuario.representante }}</h4>
+      <p class="text-sm text-gray-500">{{ usuario.posicion }}</p>
+    </div>
+  </div>
+
+  <!-- Descripción -->
+  <div class="mb-10">
+    <h3 class="text-xl font-semibold text-gray-800">Descripción</h3>
+    <p class="text-gray-600 mt-2">{{ usuario.descripcion }}</p>
+  </div>
+
+  <!-- Detalles del Perfil -->
+  <div class="perfil-detalles space-y-6">
+    <!-- Información de Contacto -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800">Información de Contacto</h3>
+      <div class="perfil-contacto space-y-2 mt-2 flex flex-col gap-1">
+        <p><strong>Email:</strong> <span class="text-gray-600 ml-2">{{ usuario.email }}</span></p>
+        <p><strong>Teléfono:</strong> <span class="text-gray-600 ml-2">{{ usuario.telefono }}</span></p>
+        <p><strong>Dirección:</strong> <span class="text-gray-600 ml-2">{{ usuario.direccion }}</span></p>
+      </div>
+    </div>
+
+
+
+    <!-- Clientes Asociados -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800">Productos Asignados</h3>
+      <ul class="list-disc list-inside text-gray-600 mt-2">
+        <li *ngFor="let cliente of usuario.productos">{{ cliente }}</li>
+      </ul>
+    </div>
+
+    <!-- Redes Sociales -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800">Redes de Contacto</h3>
+      <div class="perfil-social flex space-x-4 mt-2">
+        <a *ngIf="usuario.linkedin" href="{{ usuario.linkedin }}" target="_blank"
+          class="text-blue-600 hover:text-blue-800">
+          <div class="w-7 h-7 bg-social-icons bg-no-repeat bg-linkedin"></div>
+        </a>
+        <a *ngIf="usuario.twitter" href="{{ usuario.twitter }}" target="_blank"
+          class="text-blue-400 hover:text-blue-600">
+          <div class="w-7 h-7 bg-social-icons bg-no-repeat bg-twitter"></div>
+        </a>
+        <a *ngIf="usuario.website" href="{{ usuario.website }}" target="_blank"
+          class="text-gray-600 hover:text-gray-800">
+          <div class="w-7 h-7 bg-social-icons bg-no-repeat bg-facebook"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

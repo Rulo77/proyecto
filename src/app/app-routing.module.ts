@@ -22,10 +22,10 @@ const routes: Routes = [
       { path: 'trabajadores', component: TrabajadoresComponent}
     ]
   },
-  // { path: 'register', component: RegisterComponent},
+  { path: 'register', component: RegisterComponent},
 
-  // { path: '', redirectTo: 'login', pathMatch: 'full' },
-  // { path: '**', redirectTo: 'login' }
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '**', redirectTo: 'login' }
 ];
 
 @NgModule({

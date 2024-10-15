@@ -1,0 +1,19 @@
+/* Definir el sprite de redes sociales */
+.bg-social-icons {
+  background-image: url('/assets/logos.png'); /* Ruta del sprite */
+  background-size: 60px 60px; /* Ajustar el tamaño total del sprite (si hay 4 iconos, 2x2) */
+}
+
+/* Posiciones específicas para cada red social (basado en el sprite) */
+.bg-linkedin {
+  background-position: -5px -5px; /* LinkedIn (esquina superior izquierda) */
+}
+
+.bg-twitter {
+  background-position:-32px -31px; /* Twitter (segunda columna, primera fila) */
+}
+
+.bg-facebook {
+  background-position: -5px -31px; /* Facebook (primera columna, segunda fila) */
+}
+
